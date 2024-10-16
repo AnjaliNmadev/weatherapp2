@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app </title>
+    <link rel ="stylesheet" href="style.css">
+    <link rel ="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+     <div class="mainbox">
+    
+        <div class="maincontainer">
+            <header>
+                <div class="inputtype">
+                    <input type ="text" name= " search box" placeholder="search city" class ="searchbox"  >
+                    <i class="fa-solid fa-magnifying-glass click-btn" ></i>
+                </div>
+            </header>
+           
+            
+    <section class="weatherinfo" style="display: none">
+        <div class="locAndtime">
+            <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3 class="cityname"> Ghaziabad</h1>
+            </div>
+            <div class="clock">
+                <h3 class="day" id = "da">Sat, </h4>
+                <h4 class="date" id="dt"> 4 Sep 2024</h4>
+                <h3 class="time" id ="ti"> 02:09 PM</h4>
+            </div>
+        </div>
+
+        <div class="weatherimgandtemp">
+
+            <div class="weatherimg">
+                <img src="images/thundersc.png"  class="wimages">
+            </div>
+            <div class="tempdetails">
+                <h3 class="temp"> 29 ℃</h3>
+                <h3 class="wcondition"> clouds</h3>
+                
+            </div>
+        
+        </div>
+        <div class="weather-detail">
+            <div class="humidity-detail"> 
+                <i class="fa-solid fa-droplet"></i>
+                <h4 class="humidity"> Humidity :</h3>  
+                <h4 class="humidity-txt"> 81 % </h3>
+            </div>
+            <div class="wind-detail">
+                <i class="fa-solid fa-wind"></i>
+                <h4 class="wind"> Wind :</h3>
+                <h4 class="wind-txt"> 11 Km/h</h3>
+            </div>
+
+        </div>
+
+    
+    <div class="forecastedetails">
+        <div class="forecaste">
+            <div class="forecasteinfo">
+                <h4 class="forecasteday"> 15 Sep  </h4>
+                <h4 class="forecastetemp"> 31 ℃</h4>
+                <img src="images/thundersc.png"  class="forecasteimg">
+            </div>
+            <div class="forecasteinfo">
+                <h4 class="forecasteday"> 15 Sep  </h4>
+                <h4 class="forecastetemp"> 31 ℃</h4>
+                <img src="images/thundersc.png" class="forecasteimg">
+            </div>
+            <div class="forecasteinfo">
+                <h4 class="forecasteday"> 15 Sep  </h4>
+                <h4 class="forecastetemp"> 31 ℃</h4>
+                <img src="images/thundersc.png" class="forecasteimg">
+            </div>
+            <div class="forecasteinfo">
+                <h4 class="forecasteday"> 15 Sep </h4>
+                <h4 class="forecastetemp"> 31 ℃</h4>
+                <img src="images/thundersc.png"  class="forecasteimg">
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+
+    <section class="searchcity" >
+        <div class="searchimage">
+        <img src=""class="simg">
+        <p class="search-txt">
+            Enter city name to know about city weather information.
+        </p>
+        </div>
+    </section>
+    <section class="pagenotfound" style="display: none" >
+        <div class="pnfimage">
+        <img src=""class="pnfimg">
+        <p class="pnf-txt">
+            Enter city name to know about city weather information.
+        </p>
+        </div>
+    </section>
+
+        </div>
+
+
+     </div>
+    
+<script src="script.js" defer ></script>
+
+</body>
+</html>
